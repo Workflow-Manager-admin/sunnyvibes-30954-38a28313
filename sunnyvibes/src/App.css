@@ -6,6 +6,82 @@
   --border-color: rgba(255, 255, 255, 0.1);
 }
 
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
+}
+
 body {
   margin: 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -15,10 +91,162 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
+}
+
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
 }
 
 .navbar {
@@ -35,6 +263,82 @@ body {
   z-index: 100;
 }
 
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
+}
+
 .logo {
   font-size: 1.25rem;
   font-weight: 600;
@@ -43,8 +347,160 @@ body {
   gap: 8px;
 }
 
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
+}
+
 .logo-symbol {
   color: var(--base-light);
+}
+
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
 }
 
 .container {
@@ -53,6 +509,82 @@ body {
   padding: 0 24px;
   width: 100%;
   box-sizing: border-box;
+}
+
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
 }
 
 .hero {
@@ -65,10 +597,162 @@ body {
   gap: 24px;
 }
 
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
+}
+
 .subtitle {
   color: var(--base-light);
   font-weight: 500;
   font-size: 1.1rem;
+}
+
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
 }
 
 .title {
@@ -78,12 +762,164 @@ body {
   margin: 0;
 }
 
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
+}
+
 .description {
   font-size: 1.1rem;
   line-height: 1.5;
   color: var(--text-secondary);
   max-width: 600px;
   margin-bottom: 16px;
+}
+
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
 }
 
 .btn {
@@ -98,11 +934,239 @@ body {
   transition: background-color 0.2s ease;
 }
 
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
+}
+
 .btn:hover {
   background-color: #7691ff;
+}
+
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
 }
 
 .btn-large {
   padding: 12px 24px;
   font-size: 1.1rem;
+}
+
+/* ---- SunnyVibes Card and Form ---- */
+.sv-card {
+  background: #ffffff10;
+  border-radius: 24px;
+  box-shadow: 0 4px 28px 0 rgba(30, 30, 60, 0.12);
+  backdrop-filter: blur(2px);
+  padding: 40px 32px;
+  max-width: 400px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.15s;
+}
+
+.sv-card:hover,
+.sv-card:focus-within {
+  box-shadow: 0 8px 40px 0 rgba(30, 30, 60, 0.16);
+}
+
+.sv-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.sv-label {
+  font-size: 1.05rem;
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sv-input, .sv-select {
+  padding: 12px 16px;
+  border-radius: 16px;
+  border: 1.5px solid var(--border-color);
+  background: #fff;
+  color: #1a1a2c;
+  font-size: 1.05rem;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.18s;
+  box-shadow: 0 1.5px 8px 0 rgba(100,150,220,0.045);
+  font-family: inherit;
+}
+
+.sv-input:focus,
+.sv-select:focus {
+  border-color: var(--base-light);
+  box-shadow: 0 2px 8px 0 rgba(110,198,255,0.15);
+}
+
+.sv-select {
+  appearance: none;
+  background: #f5faff url("data:image/svg+xml;utf8,<svg fill='gray' height='16' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M4 7l4 4 4-4'/></svg>") no-repeat right 1rem center/1.2em auto;
+}
+
+.sv-input::placeholder {
+  color: #b5b5d6;
+  opacity: 1;
+}
+
+/* For smaller screens */
+@media (max-width: 520px) {
+  .sv-card {
+    padding: 27px 10px;
+    max-width: 95vw;
+  }
 }
